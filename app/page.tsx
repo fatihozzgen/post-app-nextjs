@@ -4,7 +4,7 @@ import FormPost from './Form'
 import axios from 'axios'
 
 async function getPosts() {
-  const res = await axios.get(`${process.env.BASE_URL}/api/getPosts`)
+  const res = await axios.get('post-app-nextjs-fjkg7kypy-fatihozzgen.vercel.app/api/getPosts')
   
   return res.data
 }
