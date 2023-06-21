@@ -1,7 +1,4 @@
-import Image from 'next/image'
-import Link from 'next/link'
 import FormPost from './Form'
-import axios from 'axios'
 
 async function getPosts() {
   const res = await fetch(`${process.env.BASE_URL}/api/getPosts`,{
