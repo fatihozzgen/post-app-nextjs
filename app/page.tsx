@@ -2,7 +2,7 @@ import FormPost from './Form'
 const baseURL = "https://post-app-nextjs-q8tkyj6n5-fatihozzgen.vercel.app";
 
 async function getPosts() {
-  const res = await fetch(`${baseURL}/api/getPosts`, {
+  const res = await fetch(`http://localhost:3000/api/getPosts`, {
     method: "GET",
     cache: "no-cache"
   });
