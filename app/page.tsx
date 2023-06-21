@@ -4,9 +4,12 @@ import FormPost from './Form'
 import axios from 'axios'
 
 async function getPosts() {
-  const res = await axios.get('post-app-nextjs-fjkg7kypy-fatihozzgen.vercel.app/api/getPosts')
+  const res = await fetch('post-app-nextjs-fjkg7kypy-fatihozzgen.vercel.app/api/getPosts',{
+      method: "GET",
+      cache: "no-cache"
+  })
   
-  return res.data
+  return res.json()
 }
 
 export default async function Home() {
