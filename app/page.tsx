@@ -19,7 +19,7 @@ export default async function Home() {
       <FormPost/>
 
     {data.map(post => (
-      <h1 key={post.id} className='text-lg '>{post.title}</h1>
+      <h1 key={post.id} className='text-lg border-b border-b-2 border-[#884A39] w-1/2 text-left p-3'>{post.title}</h1>
     ))}
     </main>
   )

@@ -21,13 +21,13 @@ export default function FormPost() {
     }
 
 return (
-    <form onSubmit={submitPost}>
-<input className="text-black  border border-black"
+    <form onSubmit={submitPost} className=" w-full flex gap-3 items-center justify-center mb-10" >
+<input className="text-black bg-[#F5EFE7] p-2 rounded-md w-96  border-2 h-10 border-[#884A39] outline-none "
 onChange={(e) => setTitle(e.target.value)}
 value={title}
 type="text"
 />
-<button  className=" border border-black" type="submit">Make a new post </button>
+<button  className=" bg-[#884A39] h-10 p-2 text-white rounded-md border-none" type="submit">Make a new post </button>
     </form>
 )
 }
