@@ -2,7 +2,7 @@ import FormPost from './Form'
 
 async function getPosts() {
   const baseURL = "http://localhost:3000"; 
-  const res = await fetch(`/api/createPost`, {
+  const res = await fetch(`/api/getPosts`, {
     method: "GET",
     cache: "no-cache"
   });
