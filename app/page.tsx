@@ -1,10 +1,12 @@
-import axios from 'axios';
 import FormPost from './Form'
 
 async function getPosts() {
-  const baseURL = "http://localhost:3000"; 
-  const res = await axios.get(`/api/getPosts`);
-  return res.data
+  const baseURL = "https://post-app-nextjs-omega.vercel.app"; 
+  const res = await fetch(`${baseURL}/api/getPosts`, {
+    method: "GET",
+    cache: "no-cache"
+  });
+  return res.json()
 }
 
 export default async function Home() {
