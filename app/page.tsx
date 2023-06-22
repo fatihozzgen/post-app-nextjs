@@ -2,7 +2,7 @@ import FormPost from './Form'
 
 async function getPosts() {
   const baseURL = "http://localhost:3000"; 
-  const res = await fetch(`https://jsonplaceholder.typicode.com/posts`, {
+  const res = await fetch(`/api/createPost`, {
     method: "GET",
     cache: "no-cache"
   });
