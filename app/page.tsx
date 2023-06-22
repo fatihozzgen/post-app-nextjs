@@ -2,7 +2,7 @@ import axios from 'axios';
 import FormPost from './Form'
 
 async function getPosts() {
-  const baseURL = "http://localhost:3000"; 
+  const baseURL = "https://post-app-nextjs-theta.vercel.app"; 
   const res = await axios.get(`${baseURL}/api/getPosts`);
   return res.data
 }
