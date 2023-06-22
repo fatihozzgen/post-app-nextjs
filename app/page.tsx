@@ -1,8 +1,8 @@
 import FormPost from './Form'
 
 async function getPosts() {
-  const baseURL = "https://post-app-nextjs-omega.vercel.app"; 
-  const res = await fetch(`${baseURL}/api/getPosts`, {
+  const baseURL = "http://localhost:3000"; 
+  const res = await fetch(`https://jsonplaceholder.typicode.com/posts`, {
     method: "GET",
     cache: "no-cache"
   });
