@@ -1,7 +1,7 @@
 import FormPost from './Form'
 
 async function getPosts() {
-  const res = await fetch(`https://post-app-nextjs-pi.vercel.app/api/getPosts`, {
+  const res = await fetch(`/api/getPosts`, {
     method: "GET",
     cache: "no-cache"
   });
