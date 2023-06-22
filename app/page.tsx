@@ -1,11 +1,11 @@
 import FormPost from './Form'
 
 async function getPosts() {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/getPosts`, {
+  const res = await fetch(`http://post-app-nextjs-kuw3xsprp-fatihozzgen.vercel.app/api/getPosts`, {
     method: "GET",
     cache: "no-cache"
   });
-  return res.json();
+  return res.json()
 }
 
 export default async function Home() {
